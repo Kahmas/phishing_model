@@ -13,7 +13,7 @@ def serve_static(filename):
     return send_from_directory("static/assets", filename)
 
 # Load model
-model = pickle.load(open('model/random_forest_model.pkl', 'rb'))
+model = pickle.load(open('random_forest_model.pkl', 'rb'))
 
 @app.route('/')
 def home():
